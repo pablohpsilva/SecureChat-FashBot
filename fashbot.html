@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Strophe.js FashBot AddUser</title>
+  <script type='text/javascript'
+	  src='http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js'></script>
+  <script type='text/javascript'
+	  src='strophe.min.js'></script>  
+  <script type='text/javascript'
+	  src='strophe.register.js'></script>	  
+  <script type='text/javascript'
+	  src='fashbot.js'></script>
+  
+</head>
+<body>
+<form>
+Jabber2Add: <input type= "text" id = "jabber"/>
+<input type="submit" value = "Submit" 
+		onclick = "create()"/>
+<input type="button" value = "Connect" 
+		onclick = "connect('tundefashola')"/>
+</form>
+
+<div id = 'myAnchor'></div>
+
+<script type="text/javascript">
+	function create(){
+		var user = document.getElementById('jabber').value;
+		connect(user);
+		//window.alert(user);
+	}
+
+</script>
+ 
+</body>
+</html> 
