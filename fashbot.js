@@ -1,7 +1,7 @@
-var BOSH_SERVICE = 'http://localhost/http-bind';
+var BOSH_SERVICE = 'http://192.168.148.143:5280/http-bind';
 var connection = null;
 var admin_jabber_id = 'admin@localhost';
-var password = 'tunDEF0958';
+var password = 'admin';
 
 
 function connect(user)
